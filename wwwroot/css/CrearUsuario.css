@@ -1,0 +1,47 @@
+﻿.container {
+   
+    align-items: center;
+    height: 5px; /* 100% del alto de la ventana */
+}
+
+/* Estilos para el formulario */
+form {
+    height: 500px;
+    text-align: left;
+    padding: 1px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    background-color: #f8f8f8;
+    margin-bottom: 10px;
+}
+
+/* Estilos para los elementos del formulario */
+label, input[type="text"], textarea {
+    display: block;
+    padding: 1px;
+    margin: 8px;
+    width: 95%;
+    font-size: 16px;
+}
+
+/* Estilo específico para el campo de entrada de color */
+input[type="color"] {
+    width: 30%;
+    padding: 1px;
+    margin: 8px;
+    height: 80px;
+    
+}
+
+/* Estilo adicional para el botón */
+button {
+    background-color: #007bff;
+    margin-top:70px;
+    color: white;
+    padding: 1px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 30%;
+    margin-left: 70%;
+}

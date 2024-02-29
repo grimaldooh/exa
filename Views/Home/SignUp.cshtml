@@ -1,0 +1,99 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarme</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/Login.css" />
+    <script src="~/js/signup.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Estilo para el fondo de pantalla */
+        body {
+            background-image: url("https://lh6.googleusercontent.com/-a_9Yxlct8nE/Ud_A6PcsveI/AAAAAAAAARk/hsE39Mh6Ayk/w1435-h897-no/fondo+de+pantalla+de+paraiso+de+agua+12.jpg"); /* URL de la imagen de fondo en Internet */
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-form">
+        <h3>Bienvenido</h3>
+        <form id="userForm">
+            <div class="form-group-up">
+                <label for="Name">Nombre:</label>
+                <input class="linea-input" type="text" id="Name" name="Name" class="form-control" required>
+            </div>
+           
+            <div class="form-group-up">
+                <label for="Password">Contraseña:</label>
+                <input class="linea-input" type="password" id="Password" name="Password" class="form-control" required>
+            </div>
+            <div class="btn-log">
+                <button type="submit" class="btn btn-primary btn-round">Registrarme</button>
+            </div>
+           
+        </form>
+        <p>
+            ¿Ya tienes una cuenta? <a class="register-link" href="/Home/LogIn">Iniciar Sesión</a>
+        </p>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="usuarioExito" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Usuario creado exitosamente</h5>
+
+                </div>
+                <div class="modal-body">
+                    ¡Bienvenido!
+                </div>
+                <div class="modal-footer">
+                    <button id="MisForosID" type="button" class="btn btn-secondary" data-dismiss="modal">Ir a Log-in</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="usuarioError" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">E-mail ya en uso</h5>
+
+                </div>
+                <div class="modal-body">
+                    El e-mail ingresado ya fue registrado, intenta con un nuevo correo.
+                </div>
+                <div class="modal-footer">
+                    <button id="errorbtn" type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    document.getElementById('MisForosID').addEventListener('click', function () {
+        window.location.href = '/Home/Login';
+    });
+
+    document.getElementById('errorbtn').addEventListener('click', function () {
+        window.location.href = '/Home/SignUp';
+    });
+
+</script>
+
+</html>

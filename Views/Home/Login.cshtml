@@ -1,0 +1,62 @@
+﻿
+@{
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="~/js/login.js"></script>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/Login.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Estilo para el fondo de pantalla */
+        body {
+            background-image: url("https://articles-img.sftcdn.net/f_auto,t_article_cover_l/auto-mapping-folder/sites/2/2020/02/fondos-pantalla-espacio-header-1.jpg"); /* URL de la imagen de fondo en Internet */
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+
+    </style>
+</head>
+<body>
+
+
+
+    <div class="login-form">
+        <h2>Log-in</h2>
+        <form id="loginForm">
+            <div class="form-group-up">
+                <label for="Name">Nombre:</label>
+                <input class="linea-input" type="text" id="Name" name="Name" class="form-control" required>
+            </div>
+
+            <div class="form-group-up">
+                <label for="Password">Contraseña:</label>
+                <input class="linea-input" type="password" id="Password" name="Password" class="form-control" required>
+            </div>
+            <div class="btn-log">
+                <button type="submit" class="btn-primary btn-round">Iniciar Sesión</button>
+            </div>
+
+           
+        </form>
+        <p>
+            ¿Aún no tienes una cuenta? <a class="register-link" href="/Home/SignUp">Registrarme</a>
+
+        </p>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,58 @@
+﻿/* Estilos para centrar el contenido */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Estilos para el formulario */
+.login-form {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+
+/* Estilos para el enlace de registro */
+.register-link {
+    color: blue;
+    text-decoration: underline;
+}
+
+.contrasena {
+    margin-top: 10px;
+}
+
+.usuario {
+    margin-top: 20px;
+}
+
+.btn-log {
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+
+.btn-round {
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.linea-input {
+    border: none; /* Quita los bordes */
+    background: none; /* Quita el fondo */
+    border-bottom: 1px solid #000; /* Línea inferior */
+    outline: none; /* Quita el contorno al hacer clic */
+    padding: 5px; /* Añade relleno si deseas */
+    font-size: 16px; /* Tamaño de fuente */
+    color: #000; /* Color del texto */
+    width: 100%; /* Ancho del input, ajusta según tus necesidades */
+}
+
+.form-group-up {
+    margin-top: 20px;
+}
